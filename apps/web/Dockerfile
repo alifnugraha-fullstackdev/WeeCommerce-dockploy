@@ -1,12 +1,16 @@
 FROM node:20-alpine AS base
 WORKDIR /app
-RUN npm install -g pnpm@latest
+RUN npm config set fetch-retry-maxtimeout 120000 && \
+    npm config set fetch-retry-mintimeout 10000 && \
+    npm config set fetch-retries 5 && \
+    (npm install -g pnpm@latest || npm install -g pnpm@latest --registry=https://registry.npmmirror.com)
 
 # ---- Dependencies ----
 FROM base AS deps
 COPY pnpm-lock.yaml pnpm-workspace.yaml package.json ./
 COPY apps/web/package.json ./apps/web/
-RUN pnpm install --frozen-lockfile --filter @weecommerce/web...
+RUN pnpm install --frozen-lockfile --filter @weecommerce/web... || \
+    (pnpm config set registry https://registry.npmmirror.com && pnpm install --frozen-lockfile --filter @weecommerce/web...)
 
 # ---- Builder ----
 FROM base AS builder
