@@ -9,3 +9,5 @@ coverage/
 .cache/
 NUL
 .github/workflows/
+apps/*/pnpm-lock.yaml
+apps/*/pnpm-workspace.yaml
