@@ -23,8 +23,8 @@ services:
     image: ghcr.io/${GITHUB_REPOSITORY:-weecommerce}/web:latest
     container_name: weecommerce-nextjs
     build:
-      context: ./apps/web
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: apps/web/Dockerfile
     environment:
       NODE_ENV: production
       API_URL: http://hono:4000
@@ -46,8 +46,8 @@ services:
     image: ghcr.io/${GITHUB_REPOSITORY:-weecommerce}/api:latest
     container_name: weecommerce-hono
     build:
-      context: ./apps/api
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: apps/api/Dockerfile
     environment:
       NODE_ENV: production
       PORT: 4000
