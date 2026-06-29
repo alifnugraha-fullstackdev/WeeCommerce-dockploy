@@ -1,18 +1,19 @@
 FROM node:20-alpine AS base
-RUN apk add --no-cache libc6-compat wget
 WORKDIR /app
+RUN npm install -g pnpm@latest
 
 # ---- Dependencies ----
 FROM base AS deps
-COPY package.json package-lock.json* ./
-RUN npm ci --omit=dev=false
+COPY package.json pnpm-lock.yaml ./
+RUN pnpm install --frozen-lockfile
 
 # ---- Builder ----
 FROM base AS builder
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
+ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
-RUN npm run build
+RUN pnpm run build
 
 # ---- Runner ----
 FROM node:20-alpine AS runner
