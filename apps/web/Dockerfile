@@ -5,7 +5,6 @@ WORKDIR /app
 # ---- Dependencies ----
 FROM base AS deps
 COPY package.json package-lock.json* ./
-COPY .npmrc ./
 RUN npm ci --omit=dev=false
 
 # ---- Builder ----
