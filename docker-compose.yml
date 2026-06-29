@@ -1,0 +1,124 @@
+# production docker-compose.yml
+# 5 services: nginx + nextjs + hono + postgres + redis
+
+services:
+  nginx:
+    image: nginx:alpine
+    container_name: weecommerce-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./docker/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./docker/nginx/conf.d:/etc/nginx/conf.d:ro
+      - certbot-data:/etc/letsencrypt:ro
+    depends_on:
+      - nextjs
+      - hono
+    restart: always
+    networks:
+      - weecommerce-net
+
+  nextjs:
+    image: ghcr.io/${GITHUB_REPOSITORY:-weecommerce}/web:latest
+    container_name: weecommerce-nextjs
+    build:
+      context: ./apps/web
+      dockerfile: Dockerfile
+    environment:
+      NODE_ENV: production
+      API_URL: http://hono:4000
+      NEXT_PUBLIC_SITE_URL: https://weecommerce.web.id
+    depends_on:
+      hono:
+        condition: service_healthy
+    restart: always
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+    networks:
+      - weecommerce-net
+
+  hono:
+    image: ghcr.io/${GITHUB_REPOSITORY:-weecommerce}/api:latest
+    container_name: weecommerce-hono
+    build:
+      context: ./apps/api
+      dockerfile: Dockerfile
+    environment:
+      NODE_ENV: production
+      PORT: 4000
+      DATABASE_URL: postgresql://weecommerce:${DB_PASSWORD}@postgres:5432/weecommerce
+      REDIS_URL: redis://redis:6379
+      RESEND_API_KEY: ${RESEND_API_KEY}
+      RESEND_FROM: ${RESEND_FROM:-hello@weecommerce.web.id}
+      ADMIN_EMAIL: ${ADMIN_EMAIL:-hello@weecommerce.web.id}
+      TURNSTILE_SECRET: ${TURNSTILE_SECRET}
+      WEBHOOK_URL: ${WEBHOOK_URL}
+      WEBHOOK_SECRET: ${WEBHOOK_SECRET}
+      SENTRY_DSN: ${SENTRY_DSN}
+      R2_ACCOUNT_ID: ${R2_ACCOUNT_ID}
+      R2_ACCESS_KEY_ID: ${R2_ACCESS_KEY_ID}
+      R2_SECRET_ACCESS_KEY: ${R2_SECRET_ACCESS_KEY}
+      R2_BUCKET: ${R2_BUCKET:-weecommerce-media}
+      LOG_LEVEL: info
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    restart: always
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:4000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+    networks:
+      - weecommerce-net
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: weecommerce-postgres
+    environment:
+      POSTGRES_USER: weecommerce
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: weecommerce
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ./docker/db/init:/docker-entrypoint-initdb.d:ro
+    restart: always
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U weecommerce -d weecommerce"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+    networks:
+      - weecommerce-net
+
+  redis:
+    image: redis:7-alpine
+    container_name: weecommerce-redis
+    command: redis-server --appendonly yes --maxmemory 256mb --maxmemory-policy allkeys-lru
+    volumes:
+      - redis-data:/data
+    restart: always
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    networks:
+      - weecommerce-net
+
+networks:
+  weecommerce-net:
+    driver: bridge
+
+volumes:
+  postgres-data:
+  redis-data:
+  certbot-data:

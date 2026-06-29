@@ -1,0 +1,35 @@
+{
+  "name": "@weecommerce/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "lint": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "db:migrate": "tsx src/lib/migrate.ts",
+    "db:seed": "tsx src/lib/seed.ts"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3",
+    "@hono/node-server": "^2.0.6",
+    "@hono/zod-validator": "^0.4",
+    "@sentry/node": "^8",
+    "bcryptjs": "^3.0.3",
+    "hono": "^4",
+    "ioredis": "^5",
+    "jose": "^6.2.3",
+    "pg": "^8",
+    "resend": "^4",
+    "zod": "^3"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^3.0.0",
+    "@types/node": "^20",
+    "@types/pg": "^8",
+    "tsx": "^4",
+    "typescript": "^5"
+  }
+}

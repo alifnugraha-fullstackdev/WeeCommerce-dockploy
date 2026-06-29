@@ -1,0 +1,166 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+/* ── WeeCommerce Design Tokens ──────────────────────────
+   Dark mode (default)
+*/
+:root {
+  --color-base: #09090b;
+  --color-surface: #111113;
+  --color-surface-2: #1a1a1d;
+  --color-border: #27272a;
+  --color-border-soft: #1a1a1d;
+  --color-text: #fafafa;
+  --color-muted: #a1a1aa;
+  --color-accent: #2dd4bf;
+  --color-accent-dim: #0d9488;
+  --color-accent-soft: rgba(45, 212, 191, 0.15);
+  --color-glass: rgba(17, 17, 19, 0.6);
+  --color-glass-border: rgba(39, 39, 42, 0.4);
+  --color-glass-hover: rgba(17, 17, 19, 0.8);
+  --color-success: #22c55e;
+  --color-destructive: #ef4444;
+  color-scheme: dark;
+}
+
+/* Light mode */
+:root.light,
+html.light {
+  --color-base: #ffffff;
+  --color-surface: #fafafa;
+  --color-surface-2: #f4f4f5;
+  --color-border: #e4e4e7;
+  --color-border-soft: #e4e4e7;
+  --color-text: #09090b;
+  --color-muted: #52525b;
+  --color-accent: #0d9488;
+  --color-accent-dim: #0f766e;
+  --color-accent-soft: rgba(13, 148, 136, 0.15);
+  --color-glass: rgba(250, 250, 250, 0.6);
+  --color-glass-border: rgba(228, 228, 231, 0.4);
+  --color-glass-hover: rgba(250, 250, 250, 0.8);
+  color-scheme: light;
+}
+
+@theme inline {
+  --color-background: var(--color-base);
+  --color-foreground: var(--color-text);
+  --color-card: var(--color-surface);
+  --color-card-foreground: var(--color-text);
+  --color-popover: var(--color-surface);
+  --color-popover-foreground: var(--color-text);
+  --color-primary: var(--color-accent);
+  --color-primary-foreground: var(--color-base);
+  --color-secondary: var(--color-surface);
+  --color-secondary-foreground: var(--color-text);
+  --color-muted: var(--color-muted);
+  --color-muted-foreground: var(--color-muted);
+  --color-accent: var(--color-surface-2);
+  --color-accent-foreground: var(--color-text);
+  --color-destructive: var(--color-destructive);
+  --color-destructive-foreground: var(--color-text);
+  --color-border: var(--color-border);
+  --color-input: var(--color-surface);
+  --color-ring: var(--color-accent-soft);
+  --color-success: var(--color-success);
+  --color-glass: var(--color-glass);
+  --color-glass-border: var(--color-glass-border);
+  --color-glass-hover: var(--color-glass-hover);
+  --radius: 0.5rem;
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-sans: 'Inter Variable', 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+/* ── Override Shadcn .dark specificity ── */
+html:not(.light) {
+  --color-background: var(--color-base);
+  --color-foreground: var(--color-text);
+}
+
+/* ── Base ── */
+body {
+  background: var(--color-base);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+/* ── Log cloud theming ── */
+.logo-cloud-img {
+  color: #22c55e;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+html.light .logo-cloud-img {
+  color: #16a34a;
+  opacity: 0.5;
+}
+
+/* ── Intelligence Grid ────────────────────────────────── */
+.intelligence-grid {
+  background-image:
+    linear-gradient(to right, var(--color-border) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--color-border) 1px, transparent 1px);
+  background-size: 48px 48px;
+  opacity: 0.1;
+  mask-image: radial-gradient(ellipse 80% 50% at 50% 0%, black, transparent);
+  -webkit-mask-image: radial-gradient(ellipse 80% 50% at 50% 0%, black, transparent);
+}
+
+html.light .intelligence-grid {
+  opacity: 0.06;
+}
+
+/* ── Glassmorphism ──────────────────────────────────── */
+.glass {
+  background: var(--color-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--color-glass-border);
+}
+
+.glass-hover {
+  transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.glass-hover:hover {
+  background: var(--color-glass-hover);
+  border-color: var(--color-accent-soft);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* ── Section container ───────────────────────────────── */
+.section-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 768px) {
+  .section-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+/* ── Card hover lift ─────────────────────────────────── */
+.card-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.card-lift:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+  border-color: var(--color-accent-soft);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

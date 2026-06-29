@@ -1,0 +1,300 @@
+
+
+WeeCommerce
+Company Profile
+E-Commerce Systems, Powered by AI
+
+
+
+
+
+
+hello@weecommerce.id
+weecommerce.id
+Indonesia — Serving clients globally
+
+Who We Are
+
+
+We build e-commerce systems, not websites.
+
+WeeCommerce is a specialist agency at the intersection of custom development, artificial intelligence, and business automation.
+
+We work with brands that have outgrown their current digital setup — businesses that are selling, growing, and ready for infrastructure that keeps up.
+
+Most agencies build you a store. We build you a system. The difference is felt when your order volume triples, your CS team is overwhelmed, and your platform still works as if nothing changed.
+
+What We Are
+What We Are Not
+E-commerce specialist agency
+A generic digital agency
+Custom development + AI integration
+A template shop
+End-to-end system ownership
+A build-and-disappear vendor
+Built for scale from day one
+A quick-launch freelancer platform
+
+Why WeeCommerce
+
+01
+AI-Native, Not AI-Added
+We don't bolt AI on at the end. Every system we build is designed with AI integration from the first line of architecture. Chatbot, RAG, automation — all first-class citizens, not afterthoughts.
+
+02
+Specialist, Not Generalist
+WeeCommerce does one thing: e-commerce systems. We don't do branding, social media, or graphic design. This focus translates to deeper expertise and faster delivery in the stack that actually matters.
+
+03
+End-to-End Ownership
+From discovery to deployment — one team handles the full scope. No handoffs, no lost context, no 'that's not our department.' You have one point of contact throughout the project.
+
+04
+Built to Scale
+Architecture decisions are made with your next phase in mind. The system you launch with should still perform when you 10x your order volume — without a full rebuild.
+
+Our Services
+
+Jalur A — Build: Custom E-Commerce Platforms
+For brands building from the ground up, or migrating from marketplace dependency.
+
+Tier
+What You Get
+Timeline
+Starting From
+LAUNCH
+Core E-Commerce Platform
+Custom storefront (Next.js + Supabase), product catalog, cart, checkout, payment gateway (Midtrans / Stripe), shipping integration, admin dashboard, mobile responsive, basic SEO.
+AI layer: not included.
+4–6 minggu
+Rp 15 juta
+$2,500 USD
+CONVERT
+Platform + AI Layer
+Everything in LAUNCH, plus: AI Customer Service Chatbot (trained on your products & FAQ), RAG Knowledge Base (dynamic product Q&A), Basic n8n Automation (order notifications, follow-up, low stock alerts).
+7–10 minggu
+Rp 38 juta
+$6,000 USD
+SCALE
+Full E-Commerce System
+Everything in CONVERT, plus: Advanced n8n Suite (CRM sync, abandoned cart, post-purchase email, inventory automation), AI Analytics Dashboard, multi-channel integration (WhatsApp Business API), performance optimization (Core Web Vitals, caching).
+10–16 minggu
+Rp 70 juta
+$11,000 USD
+
+Jalur B — Integrate: AI for Existing Stores
+Already have a Shopify or custom platform? We add the intelligence layer without rebuilding everything.
+
+Module
+Description
+IDR
+USD
+AI Chatbot
+Setup & training on your products and FAQ. 24/7 customer service without hiring.
+Rp 8–15 juta
+$1,200–$2,500
+RAG System
+Dynamic knowledge base from your product catalog. Context-aware answers at scale.
+Rp 10–18 juta
+$1,500–$3,000
+n8n Automation
+3–5 custom workflows: order sync, CRM, email, abandoned cart, inventory alerts.
+Rp 8–15 juta
+$1,200–$2,500
+Full AI Suite
+All three modules bundled. The complete intelligence layer for your existing store.
+Rp 22–40 juta
+$3,500–$6,500
+
+Retain — Ongoing Maintenance & AI Ops
+After launch, we offer monthly retainers to keep your system sharp.
+
+Service
+Basic
+Advanced
+Bug fixes & minor updates
+Included
+Included
+AI model re-training
+—
+Included
+n8n workflow maintenance
+—
+Included
+Monthly performance report
+Included
+Included
+Response time
+48 hours
+24 hours
+Monthly IDR
+Rp 2–3 juta
+Rp 4–6 juta
+Monthly USD
+$200–$350
+$400–$700
+
+AI Capabilities
+
+AI integration is not a feature we offer — it is the foundation of how we build. Every system we architect is designed with the assumption that intelligence should be embedded, not added later.
+
+Capability
+What It Does
+Business Impact
+RAG System
+(Retrieval-Augmented Generation)
+Dynamic knowledge base trained on your product catalog, FAQs, and policies. Customer queries get accurate, contextual answers drawn directly from your data.
+Eliminates repetitive CS queries. Scales product knowledge without manual updates.
+AI Customer Service Chatbot
+Custom-trained on your specific products, brand voice, and FAQ library. Handles common inquiries 24/7, escalates edge cases to your team.
+Reduces CS workload by 60–80% on routine inquiries. Available across web, WhatsApp, and messaging channels.
+Automation Workflows (n8n)
+Connect your store to the tools you already use. Order notifications, CRM sync, inventory alerts, abandoned cart recovery, post-purchase email sequences.
+Replaces manual operations. Scales without adding headcount.
+Fine-Tuning (Enterprise)
+Custom model training on your proprietary dataset. Available as a separate engagement after data audit and feasibility assessment.
+Domain-specific accuracy beyond out-of-the-box models. For enterprises with significant training data.
+
+
+A note on fine-tuning:
+Fine-tuning is not suitable for every project. It requires substantial training data, compute resources, and clear use-case definition. We always conduct a data audit before proposing it — and we will tell you honestly if simpler approaches (RAG, prompt engineering) will serve you just as well.
+
+How We Work
+
+Every engagement follows a structured process designed to reduce ambiguity, protect your investment, and ship clean systems on time.
+
+Step
+Phase
+What Happens
+01
+Discovery
+We spend time understanding your business model, customer journey, current pain points, and growth goals — before proposing anything. No generic solutions.
+02
+Proposal
+We define the right scope, timeline, and investment for your specific situation. Presented with full transparency: what's included, what's not, and why we recommend each decision.
+03
+Design & Build
+UI/UX design followed by full-stack development. You receive regular staging previews. Feedback loops are structured — no black-box delivery at the end.
+04
+AI Integration
+Chatbot training on your product data, RAG system configuration, and automation workflow setup. We test against real-world queries before signing off.
+05
+Launch
+Staging review, QA testing, performance checks, and go-live. We handle the deployment — you approve before anything goes public.
+06
+Retain
+Optional ongoing support: monthly maintenance, AI model updates as your catalog grows, workflow adjustments, and performance monitoring.
+
+Payment Structure
+All projects are milestone-based. You only pay for completed, approved work.
+
+Milestone
+Amount
+Trigger
+Kickoff Payment
+50%
+Upon signing the Service Agreement
+Staging Delivery
+30%
+Client approves staging preview
+Final Launch
+20%
+Live approval — before go-live
+
+Our Work
+
+NexaMart — AI-Powered E-Commerce Platform
+Featured Project  |  Full-stack e-commerce system with integrated AI
+
+NexaMart is our flagship demonstration project — a fully functional e-commerce platform built to showcase the complete WeeCommerce stack in production conditions.
+
+Layer
+What Was Built
+E-Commerce Core
+Custom storefront built with Next.js and Supabase. Product catalog, dynamic cart, multi-step checkout with real payment gateway integration. Admin dashboard for order and inventory management.
+AI Chatbot
+Customer service chatbot trained on the full NexaMart product catalog and FAQ library. Handles product inquiries, order status questions, and returns — 24/7 without human intervention.
+RAG System
+Retrieval-augmented generation layer powering the chatbot's product knowledge. Context-aware responses drawn directly from the catalog database — accurate and up-to-date as inventory changes.
+n8n Automation
+Full automation suite: order confirmation notifications, low stock alerts, customer follow-up sequences, and CRM sync workflows. All running without manual triggers.
+Performance
+Mobile-first responsive design. Optimized for Core Web Vitals. Sub-3 second load times on 4G connections.
+
+
+Live demo available upon request.
+We walk every prospect through NexaMart before a proposal is written. It answers more questions than a deck ever could.
+
+Investment
+
+Pricing reflects project complexity, AI integration scope, and timeline. All figures are starting points — we scope each project individually.
+
+Service
+Starting IDR
+Starting USD
+Best For
+LAUNCH
+Rp 15 juta
+$2,500
+Brand migrating off marketplace, needs core platform
+CONVERT
+Rp 38 juta
+$6,000
+Brand ready to automate CS and operations with AI
+SCALE
+Rp 70 juta
+$11,000
+Brand building full commerce infrastructure
+INTEGRATE
+Rp 8 juta/modul
+$1,200/module
+Existing store needing AI layer
+RETAIN (Basic)
+Rp 2 juta/bulan
+$200/month
+Maintenance + monitoring
+RETAIN (Advanced)
+Rp 4 juta/bulan
+$400/month
+Maintenance + AI ops + workflow updates
+
+All prices are exclusive of third-party API and infrastructure costs (OpenAI, hosting, domain). These are passed through to the client at cost — no markups.
+
+What's Always Included
+Source code ownership transferred upon final payment
+Documentation: code, API integrations, and workflow guides
+30 days post-launch support for bug fixes
+Staging environment for client review before go-live
+
+What's Never Included (unless agreed separately)
+Copywriting or content creation
+Product photography or graphic design
+Paid marketing or SEO campaigns
+Third-party API subscription costs
+
+Let's Build Something That Works
+
+Every project starts with a 30-minute conversation. No sales pitch — just us understanding your business and being honest about whether we're the right fit.
+
+
+What happens next:
+
+Send us a brief message about your project at hello@weecommerce.id
+We'll schedule a 30-minute discovery call within 24 hours
+You receive a detailed proposal within 48 hours of the call
+
+
+Contact
+Details
+Email
+hello@weecommerce.id
+Website
+weecommerce.id
+Location
+Indonesia — Remote-first, globally available
+Response
+Within 24 business hours
+
+
+WeeCommerce
+E-Commerce Systems, Powered by AI

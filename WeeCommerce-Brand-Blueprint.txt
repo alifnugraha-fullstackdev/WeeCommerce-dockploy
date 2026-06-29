@@ -1,0 +1,699 @@
+
+
+WeeCommerce
+Brand Blueprint
+Dokumen Internal — Strategic Reference  |  v1.0
+
+
+
+Tujuan
+Panduan strategis untuk membangun dan menjalankan brand WeeCommerce
+Scope
+Nama & Domain, ICP, Offering, Visual Identity, GTM, Sales Process, Prioritas Eksekusi
+Status
+Working brand — nama bisa berevolusi, strategy tetap relevan
+Versi
+1.0  |  Juni 2026
+Penulis
+Alif Nugraha  /  alifnugraha.studio
+
+Dokumen ini bersifat internal dan konfidensial. Tidak untuk distribusi eksternal tanpa izin.
+
+A.  Nama & Domain Strategy
+
+
+Keputusan Utama:
+WeeCommerce adalah working brand — nama sementara yang bisa berevolusi. Invest di positioning dan kualitas output, bukan di nama-nya. Brand equity dibangun dari kualitas kerja, bukan dari nama.
+
+Risiko yang Harus Disadari
+
+WeeCommerce vs WooCommerce
+Beda 1 huruf dari WooCommerce (milik Automattic). Risiko: konflik SEO, brand recall buruk, dan potensial trademark. "Wee" dalam British/informal English juga berarti "kecil" atau "buang air" — ada ceiling untuk international market.
+
+Assets yang Harus Di-secure Sekarang
+Aset
+Target
+Prioritas
+Catatan
+Domain
+weecommerce.id
+URGENT
+.id sebagai deliberate differentiator dari WooCommerce .com
+Email
+hello@weecommerce.id
+URGENT
+Jangan pakai Gmail untuk client-facing
+Instagram
+@weecommerce.id
+Minggu 1
+Secure meski belum aktif posting
+LinkedIn
+WeeCommerce
+Minggu 1
+Untuk international credibility building
+Threads
+@weecommerce.id
+Minggu 1
+Channel utama Indonesia market
+
+Working Brand Constraints
+Logo: simple dan evolvable — jangan elaborate, hindari yang terlalu specific ke nama
+Brand guideline: versi lite saja — warna, font, tone. Bukan dokumen 40 halaman.
+Tagline: portable, tidak mengandung nama brand supaya bisa dibawa ke nama baru
+Skip: merchandise fisik, intro video, brand film — terlalu tied ke nama sementara
+
+Tagline Direction (Portable ke Nama Apapun)
+Tagline
+Angle
+"Sell smarter, not harder"
+Outcome-focused, universal
+"E-commerce, powered by AI"
+Positioning jelas, descriptive
+"Built to convert. Wired to learn."
+Dual nature: commerce + AI
+"We build the store. AI runs it."
+Memorable, differentiating
+
+Trigger untuk Rebrand
+Trigger
+Action yang Perlu Diambil
+Klien internasional besar pertama
+Evaluate apakah nama jadi hambatan aktual
+Ada confusion aktual dari klien soal WooCommerce
+Accelerate rebrand — jangan tunggu
+Revenue mencapai threshold yang sustainable
+Worth invest proper rebrand dengan budget yang cukup
+Mau raising atau formal partnership
+Nama harus legally defensible sebelum proses dimulai
+
+B.  ICP & Messaging
+
+
+Prinsip: Indonesia-Primary, International-Secondary untuk Phase 1.
+Dua market = dua bahasa, dua tone, dua channel, dua sales approach. Jangan jalankan keduanya bersamaan di bulan pertama.
+
+ICP Comparison
+Dimensi
+Indonesia
+International
+Siapa
+Brand lokal dengan omzet, sudah aktif di marketplace, tim 2–10 orang
+Founder-led e-commerce, biasanya sudah punya Shopify store
+Revenue
+Rp 50jt–500jt/bulan
+$5k–$50k/month
+Pain Utama
+Dependency marketplace, fee naik, CS manual, data customer tidak dimiliki
+Western agency mahal, Shopify terlalu terbatas, butuh AI tapi tidak tahu cara
+Channel
+Threads, Instagram, WhatsApp, referral
+LinkedIn EN, cold email, portfolio website
+Pricing
+IDR
+USD
+Decision Style
+Relationship-based, butuh trust dulu
+Result-oriented, dokumentasi & process penting
+
+Jobs To Be Done
+Indonesia
+"Bantu gw lepas dari dependency Tokopedia / Shopee"
+"Otomatisin operasional supaya bisa scale tanpa nambah orang"
+"Bikin CS jalan sendiri 24/7 — gw nggak mau balas chat manual terus"
+"Bikin platform gw keliatan legit dan professional"
+
+International
+"Build me custom e-commerce that Shopify can't do"
+"Add AI to my store without rebuilding everything from scratch"
+"Automate my backend ops so I can scale without hiring more people"
+"I need a remote dev team I can actually trust to deliver"
+
+Messaging Matrix
+Element
+Indonesia
+International
+Hook
+Marketplace dependency pain
+Cost gap + AI capability gap
+Hero Feature
+n8n automation + AI chatbot
+RAG + custom integration
+Trust Signal
+NexaMart demo, case study lokal
+Portfolio, process docs, async professionalism
+CTA
+"Konsultasi gratis" / WhatsApp
+"Book a call" / Email
+Tone
+Peer-to-peer, casual, direct
+Professional, confident, outcome-focused
+Bahasa
+Indonesian (campuran OK)
+English only
+
+Messaging Copy Direction
+Indonesia
+"Toko online lo harusnya kerja keras, bukan lo."
+Kebanyakan brand bagus masih terjebak di Tokopedia dan Shopee. Fee naik, algoritma tidak bisa dikontrol, dan data customer bukan punya lo. WeeCommerce bantu lo punya platform sendiri — lengkap dengan AI yang handle CS, otomasi operasional, dan sistem yang scale bareng bisnis lo. Bukan sekadar website. Sistem.
+
+International
+"Your e-commerce should work for you. We make that happen."
+Most agencies build you a store. We build you a system — custom e-commerce with AI chatbot, RAG-powered product discovery, and automation that handles the work your team shouldn't. Delivered remotely. Documented properly. Built to last.
+
+
+Fine-tuning TIDAK boleh masuk ke messaging utama. Scope dan cost-nya terlalu variable untuk di-promise di level marketing.
+
+C.  Offering Structure & Pricing
+
+Dua Jalur Entry Point
+Jalur
+Target Klien
+Keunggulan
+A — BUILD
+Klien yang mau bangun dari nol / migrasi dari marketplace
+Project fee lebih besar, long-term relationship
+B — INTEGRATE
+Klien yang sudah punya store (Shopify/custom) mau tambah AI
+Scope lebih kecil, lebih cepat closing, gateway ke project lebih besar
+
+Jalur A — BUILD: Tiga Tier
+
+LAUNCH
+Punya platform sendiri. Berhenti numpang di marketplace orang.
+Custom e-commerce storefront (Next.js + Supabase)
+Product catalog, cart, checkout flow
+Payment gateway — Midtrans (ID) / Stripe (International)
+Shipping integration, admin dashboard, mobile responsive
+Basic SEO setup
+AI layer: TIDAK termasuk
+
+IDR: Rp 15–25 juta   |   USD: $2,500–$4,000   |   Timeline: 4–6 minggu
+
+CONVERT
+Toko lo jalan. Sekarang biarin AI yang kerja keras.
+Semua yang ada di LAUNCH, ditambah:
+AI Customer Service Chatbot (trained pada produk & FAQ klien)
+RAG Knowledge Base (product info, policy, Q&A dinamis)
+Basic n8n Automation: order notif, follow-up, low stock alert
+
+IDR: Rp 38–55 juta   |   USD: $6,000–$9,000   |   Timeline: 7–10 minggu
+
+SCALE
+Sistem yang tumbuh bareng bisnis lo — tanpa nambah orang.
+Semua yang ada di CONVERT, ditambah:
+Advanced n8n Suite: CRM sync, abandoned cart, post-purchase email, inventory automation
+AI Analytics Dashboard
+Multi-channel integration (WhatsApp Business API, email)
+Performance optimization (Core Web Vitals, caching)
+
+IDR: Rp 70–120 juta   |   USD: $11,000–$20,000   |   Timeline: 10–16 minggu
+
+Jalur B — INTEGRATE: AI & Automation for Existing Stores
+Modul
+Deskripsi
+IDR
+USD
+AI Chatbot
+Setup + training pada produk & FAQ klien. 24/7 customer service.
+Rp 8–15 juta
+$1,200–$2,500
+RAG System
+Knowledge base dinamis dari catalog produk.
+Rp 10–18 juta
+$1,500–$3,000
+n8n Automation
+3–5 workflow custom: order, CRM, email, inventory.
+Rp 8–15 juta
+$1,200–$2,500
+Full AI Suite
+Semua modul di atas — bundled.
+Rp 22–40 juta
+$3,500–$6,500
+
+Ongoing — RETAIN
+Layanan
+Basic
+Advanced
+Bug fixes & minor updates
+Ya
+Ya
+AI model re-training / update
+—
+Ya
+n8n workflow maintenance
+—
+Ya
+Monthly performance report
+Ya
+Ya
+Response time
+48 jam
+24 jam
+Harga IDR / bulan
+Rp 2–3 juta
+Rp 4–6 juta
+Harga USD / month
+$200–$350
+$400–$700
+
+Payment Structure
+Tahap
+Persentase
+Trigger
+DP / Kickoff
+50%
+Setelah SPK ditandatangani
+Staging delivery
+30%
+Preview bisa dilihat dan di-approve klien
+Final launch
+20%
+Go-live approval dari klien
+
+
+⚠  Fine-tuning TIDAK masuk tier manapun.
+Selalu custom quote setelah data audit. Biaya compute tidak predictable.
+
+
+⚠  API & infrastructure costs harus EXPLICIT di proposal.
+OpenAI, hosting, VPS — bukan bagian dari project fee. Klien setup akun sendiri, WeeCommerce yang configure.
+
+D.  Visual Identity Direction
+
+Visual Personality
+Terasa Seperti
+Tidak Terasa Seperti
+Precision tool
+Creative playground
+Confident advisor
+Corporate vendor / IT company
+Intelligent system
+Generic tech startup
+Editorial, structured
+Flashy, gradient-heavy
+
+Tiga Default yang Harus Dihindari di Indonesia
+Dark background + purple gradient → overused, tidak memorable
+Corporate blue + white → IT vendor, terlalu generic
+Cream + serif display → lebih ke creative agency, bukan tech
+
+Color System
+Dark-first untuk digital presence. Light (white base) untuk dokumen & proposal.
+
+Token
+Hex
+Role
+--color-base
+#09090B
+Background utama (near-black)
+--color-surface
+#111113
+Card, panel surface
+--color-border
+#27272A
+Divider, outline
+--color-text
+#FAFAFA
+Primary text (off-white)
+--color-muted
+#A1A1AA
+Secondary text, labels
+--color-accent
+#2DD4BF
+Signature accent (teal-400) — hero color
+--color-accent-dim
+#0D9488
+Hover state / darker accent
+
+
+Light mode untuk dokumen & proposal:
+Background #FFFFFF  |  Text #09090B  |  Accent #0D9488  |  Border #E4E4E7
+
+Typography
+Role
+Font
+Weight / Catatan
+Display / Heading
+Space Grotesk
+500–700. Geometric, distinctive. Lebih memorable dari Inter (overused).
+Body / UI
+Inter
+400–500. Universal readability. Tidak competing dengan display font.
+Technical / Code
+JetBrains Mono
+400. Untuk AI feature callouts, label teknis, code snippets.
+
+Logo Direction
+
+Wordmark: "WeeCommerce" atau "Wee·Commerce"
+Font: Space Grotesk 600  |  Letter-spacing: -0.02em
+Separator (· atau /) di antara Wee dan Commerce dalam warna #2DD4BF. Portable ke nama baru nanti.
+
+
+Hindari: shopping cart icon, robot/AI icon, hexagon, circuit board, gradient pada wordmark, dan semua yang literal & cliché.
+
+Signature Element: The Intelligence Grid
+Satu subtle grid pattern yang visible di background hero section dan proposal header. Opacity 8–12%. Merepresentasikan dua dunia WeeCommerce sekaligus: product grid (e-commerce) dan data matrix (AI). Bukan ornamental — structural.
+
+Visual Do's & Don'ts
+Lakukan
+Hindari
+Space Grotesk untuk semua heading
+Font dekoratif, script, atau terlalu artsy
+Teal (#2DD4BF) sebagai single signature accent
+Multiple accent colors yang saling competing
+Dark base, minimal surface elevation
+Dark + purple gradient (sangat overused di Indonesia)
+Mono font untuk AI-context elements
+Gradient text di heading atau body
+Subtle intelligence grid texture
+Ilustrasi generik: robot, shopping cart, bola dunia
+High contrast text on dark background
+Low opacity body text yang susah dibaca saat print
+
+Application Priority
+Brand colors + typography → lock in dulu (estimasi: 30 menit)
+Email signature → immediate agency credibility signal
+Proposal template (PDF) → langsung berdampak ke closing
+LinkedIn presence → groundwork untuk international
+Website weecommerce.id
+Social media templates → Threads, Instagram
+
+E.  Go-to-Market Strategy
+
+
+Prinsip GTM Solopreneur:
+Tidak bisa jalankan semua channel sekaligus sambil delivery project. GTM harus ruthlessly sequenced. Tujuan 30 hari pertama bukan brand yang sempurna — tujuannya: SATU DISCOVERY CALL PER MINGGU.
+
+Phase Overview
+Phase
+Durasi
+Focus
+Goal
+Phase 0 — Foundation
+2 minggu
+Lock brand assets, polish NexaMart
+Siap untuk jualan
+Phase 1 — Indonesia Push
+Bulan 1–3
+Threads content + outreach aktif
+2 closing, 1 testimonial real
+Phase 2 — Validate & Expand
+Bulan 3–6
+LinkedIn aktif, case study real
+1 project lebih besar, presence built
+Phase 3 — International
+Bulan 6+
+Cold email + LinkedIn EN
+1 international project
+
+Phase 0 — Foundation Checklist
+Beli domain weecommerce.id
+Setup hello@weecommerce.id
+Secure @weecommerce.id di Instagram, Threads, LinkedIn
+Polish NexaMart: load < 3 detik, mobile responsive, chatbot fungsional, tidak ada broken element
+Proposal template siap (PDF, WeeCommerce letterhead)
+
+Phase 1 — Engine A: Content Strategy (Threads)
+Shift dari 'developer life content' ke 'business problem content'. Tetap personal, tapi dari posisi expert.
+
+Pillar
+Proporsi
+Contoh
+Target Pembaca
+1. Problem Awareness
+40%
+"Kenapa brand lo gak akan pernah aman selama 100% depend di Tokopedia"
+Business owner belum sadar ada masalah
+2. Education
+25%
+"Apa itu RAG dan kenapa toko online lo butuh ini"
+Prospect curious, belum paham solusi
+3. Social Proof
+20%
+Breakdown NexaMart feature by feature dan kenapa dibangun begitu
+Prospect butuh validasi
+4. Contrarian / POV
+10%
+"Custom website bukan untuk semua orang — ini kriterianya"
+Membangun differentiation & POV
+5. Direct Offer
+5%
+"Gw buka 2 slot project bulan ini untuk brand marketplace"
+Prospect yang sudah warm
+Cadence: 4–5x/minggu. Rotate pillar. Pillar 5 maksimal 1x per 2 minggu.
+
+Phase 1 — Engine B: Outreach (ColdCanvas)
+Signal Prospect yang Qualified
+Aktif di Tokopedia/Shopee dengan review count tinggi (tanda revenue ada)
+Punya Instagram bisnis yang aktif
+Website tidak ada, atau ada tapi lambat/tidak ada e-commerce
+
+Outreach Sequence
+Pesan
+Kapan
+Isi & Tujuan
+Message 1
+Day 1
+"Halo [nama], gw lihat [brand] udah cukup besar di Tokopedia. Gw curious, ada gak plan untuk punya platform sendiri di luar marketplace?" — Buka conversation, BUKAN pitch langsung.
+Message 2
+Day 3–5
+Respond ke jawaban mereka. Kalau belum ada plan → kasih satu insight konkret. Build interest, bukan jualan.
+Message 3
+Day 7–10
+"Kalau lo tertarik explore lebih lanjut, gw bisa walk through case study yang relevan. 20 menit cukup." — Soft CTA ke discovery call.
+Target: 10–15 outreach/minggu. Goal: 1–2 discovery call/minggu.
+
+Conversion Funnel
+Stage
+Source
+Action
+Awareness
+Threads content / outreach reply
+Baca post, kunjungi profil, DM masuk
+Interest
+Profile visit / reply
+Send NexaMart demo link + 1-pager WeeCommerce
+Consideration
+Prospect engage
+Discovery call 30 menit (lo yang facilitate)
+Decision
+Post-call
+Kirim proposal dalam 24–48 jam
+Close
+Post-proposal
+Follow up D+3, D+7, D+14 → SPK + 50% DP
+Retention
+Post-launch
+Minta testimonial → tawarkan retainer
+
+F.  Sales Process & Proposal Flow
+
+
+Sales Flow:
+[1] QUALIFY  →  [2] PRE-CALL  →  [3] DISCOVERY  →  [4] PROPOSAL  →  [5] FOLLOW-UP  →  [6] OBJECTION  →  [7] CLOSE  →  [8] ONBOARD
+
+[1] Qualification Filter
+Tiga pertanyaan via DM/email SEBELUM agree ke discovery call:
+#
+Pertanyaan
+Yang Dicari
+Q1
+Bisnis lo sekarang jualan di mana?
+Signal bahwa sudah punya revenue — bukan idea-stage
+Q2
+Ada target waktu untuk project ini?
+Signal urgency vs hanya window shopping
+Q3
+Untuk budget ballpark, lo nyaman di range mana?
+Align SEBELUM invest waktu ke proposal penuh
+
+
+Langsung disqualify: budget di bawah Tier LAUNCH, tidak punya produk/bisnis berjalan, atau decision maker tidak ikut conversation.
+
+[2] Pre-Call Exchange
+Sebelum call, kirim NexaMart demo link + 1-pager WeeCommerce. Kalau mereka tidak mau lihat materinya → signal tidak serius.
+
+[3] Discovery Call Structure (30–45 menit)
+Menit
+Stage
+Yang Dilakukan
+0–2
+Set Agenda
+"Gw mau pahamin bisnis lo dulu. Nanti 10 menit terakhir gw share yang paling relevan." — Lo yang pegang kendali call.
+2–15
+Understand Business
+Revenue range, channel penjualan sekarang, setup online yang ada, tim berapa orang
+15–25
+Explore Pain
+"Apa yang paling bikin lo frustasi?" — "Pernah coba solve sebelumnya?" — "Kalau tidak berubah 6 bulan, apa dampaknya?" (cost of inaction)
+25–35
+Present Direction
+Hanya present yang relevan dengan pain mereka. Walk through NexaMart / demo yang spesifik.
+35–40
+Next Steps
+Announce proposal dalam 24–48 jam. Tanya: ada orang lain yang perlu ikut di keputusan ini?
+
+[4] Proposal Structure (8–12 Halaman)
+Cover — Logo WeeCommerce, nama klien, tanggal, expiry proposal
+Executive Summary — 3 paragraf: situasi mereka / solusi / kenapa WeeCommerce
+Understanding Your Business — tulis ulang apa yang lo dengar. INI yang paling membuat klien merasa dimengerti.
+Proposed Solution — spesifik ke mereka, dengan diagram/flow, bukan generic list
+In Scope / Out of Scope — sangat eksplisit. Cantumkan: third-party API costs ditanggung klien.
+Timeline & Milestones — visual, bukan text
+Investment — BARU muncul di halaman 7. Breakdown per item + payment schedule + expiry date.
+Why WeeCommerce — 3 hal spesifik: NexaMart proof, pendekatan berbeda, post-project support
+Next Steps — 3 langkah clear: konfirmasi → SPK → DP → kickoff
+
+[5] Follow-Up Sequence
+Hari
+Action
+Pesan
+Day 0
+Kirim proposal
+'Proposal sudah gw kirim ke email. Lmk kalau ada yang mau diklarifikasi.'
+Day 3
+First follow-up
+'Just checking in — udah sempat review proposal-nya?'
+Day 7
+Add value
+Kirim artikel/insight relevan yang connect ke pain mereka.
+Day 14
+Soft urgency
+'Slot project gw untuk bulan X kemungkinan akan penuh minggu ini.'
+Day 21+
+Move to nurture
+Tidak follow-up agresif. Tetap engage di konten mereka (like, occasional comment).
+
+[6] Objection Handling
+Objeksi
+Respons yang Tepat
+"Harganya mahal"
+Jangan defend harga. Redirect ke ROI: 'Mahal dibanding apa? Berapa cost CS manual + marketplace fee per bulan sekarang?' Hitung cost of inaction, bukan justify price.
+"Bisa pakai template aja?"
+"Template solve 20% dari masalah lo. Ini solve 100%-nya — termasuk AI dan automation yang template tidak pernah bisa."
+"Mau pikir-pikir dulu"
+Jangan terima sebagai jawaban final. 'Bagian mana yang paling perlu lo pertimbangkan?' — Cari objeksi yang sebenarnya.
+"How do I trust you?" (international)
+Tawarkan Jalur B sebagai entry point kecil dulu. Milestone-based payments. Referensi klien kalau ada.
+
+[7] SPK — Elemen Wajib
+Scope sangat spesifik — list fitur exact, bukan hanya 'website e-commerce'
+Explicit out-of-scope clause + biaya change request yang jelas
+Payment schedule + konsekuensi keterlambatan
+Revision policy — rekomendasi: 2 putaran included
+Third-party cost disclaimer (API, hosting, domain ditanggung klien)
+Ownership transfer setelah pelunasan
+Confidentiality clause
+e-Materai sesuai regulasi
+International: governing law (Indonesian law) + payment method (Wise/Payoneer) + currency locking
+
+[8] Post-Close Onboarding
+Hari 1 — Confirmation
+Kirim konfirmasi resmi: DP diterima, project dimulai, list next steps, request aset yang dibutuhkan.
+
+Kickoff Meeting (dalam 3 hari)
+Konfirmasi ulang scope dan timeline
+Collect semua aset: logo, brand color, referensi visual
+Tentukan PIC di sisi klien
+Set expectation komunikasi — update setiap Jumat, response max 24 jam kerja
+Tentukan channel utama — WhatsApp group atau email thread
+
+Client Brief
+Brand guideline / referensi visual yang disukai
+List produk dan kategori
+Target customer mereka
+Kompetitor yang mereka perhatikan
+FAQ dan pertanyaan umum yang sering masuk ke CS (untuk AI chatbot training)
+
+G.  Execution Priority
+
+
+Prinsip Utama:
+Jangan bangun brand sebelum bisa jualan. Bangun cukup untuk tidak mempermalukan diri sendiri, lalu langsung sell. Brand yang indah tapi tidak ada klien = hobby, bukan bisnis.
+
+4 Tier Prioritas
+Tier
+Nama
+Deskripsi
+TIER 1
+UNBLOCK
+Tanpa ini, tidak bisa jualan sama sekali. Selesaikan dalam 3 hari.
+TIER 2
+ENABLE
+Bikin proses jualan credible dan smooth. Selesaikan dalam 10 hari.
+TIER 3
+GROW
+Bangun pipeline jangka panjang. Mulai minggu 2, ongoing.
+TIER 4
+SCALE
+Defer sampai Tier 1–3 solid dan ada revenue masuk.
+
+Tier 1 — UNBLOCK (Hari 1–3)
+Beli domain weecommerce.id + setup hello@weecommerce.id
+Secure semua social handles (@weecommerce.id di semua platform)
+Polish NexaMart: load < 3 detik, mobile ok, chatbot fungsional, tidak ada broken element atau placeholder
+
+Tier 2 — ENABLE (Hari 4–10)
+Proposal template PDF (WeeCommerce letterhead, 8–12 halaman, semua 9 section siap)
+Discovery call cheat sheet: 5 pertanyaan + bridge ke solution + cara close ke next step
+Outreach template set: DM cold opening, pre-call follow-up, post-proposal D+3/7/14
+
+Tier 3 — GROW (Hari 7+, Ongoing)
+Threads content: mulai 3x/minggu → naik ke 4–5x setelah 2 minggu berjalan
+Outreach pertama dimulai hari ke-10 (setelah Tier 2 selesai)
+Website weecommerce.id: mulai bangun minggu 3. Minimal: hero + offering + NexaMart + contact
+
+Tier 4 — SCALE (Defer)
+Full visual identity implementation → setelah project pertama closing
+LinkedIn content reguler (EN) → bulan 2–3
+International outreach → bulan 3+ (butuh 2–3 case study lokal dulu)
+Fine-tuning offering → hanya kalau ada demand aktual dari klien
+Rebrand dari WeeCommerce → sesuai trigger yang sudah didefinisikan di Bagian A
+
+Timeline Eksekusi
+Periode
+Focus
+Deliverable Target
+Hari 1–3
+Tier 1: Unblock
+Domain, email, social handles, NexaMart polish
+Hari 4–10
+Tier 2: Enable
+Proposal template, discovery script, outreach templates
+Hari 7+
+Tier 3: Grow (paralel)
+Threads posting 3x/minggu dimulai
+Hari 10+
+Outreach dimulai
+10–15 DM/minggu, target 1–2 call/minggu
+Minggu 3–4
+Website
+Minimal viable: hero + offering + portfolio + contact
+Bulan 2–3
+Case study + LinkedIn
+Dokumentasi project pertama, mulai LinkedIn EN
+Bulan 3+
+International groundwork
+Cold email EN, LinkedIn content aktif
+Bulan 6+
+Scale + evaluate rebrand
+Check trigger rebrand, retainer base, scale channel
+
+
+Ringkasan Satu Halaman
+NAMA         WeeCommerce (working brand, evolvable)
+DOMAIN       weecommerce.id  |  EMAIL: hello@weecommerce.id
+PERSONA      Small agency (lean, specialist team)
+STACK AI     RAG, AI Chatbot, n8n Automation, Fine-tuning*
+ANCHOR DEMO  NexaMart (AI e-commerce platform)
+TIER PRODUK  LAUNCH (Rp 15–25jt / $2.5–4k)   Platform only
+             CONVERT (Rp 38–55jt / $6–9k)    + AI chatbot + n8n
+             SCALE (Rp 70–120jt / $11–20k)   + Full AI suite
+VISUAL       Near-black base, teal accent (#2DD4BF), Space Grotesk
+CHANNEL ID   Threads + cold DM outreach
+CHANNEL INT  LinkedIn EN + cold email (mulai bulan 6)
+GOAL 30 HARI  1 discovery call per minggu
+GOAL 90 HARI  2 project closing, 1 testimonial real
+
+WeeCommerce — Brand Blueprint v1.0 — Juni 2026

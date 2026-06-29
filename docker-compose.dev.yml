@@ -1,0 +1,37 @@
+# dev docker-compose.yml
+# Starts postgres + redis. Apps run on host for hot reload.
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: weecommerce-postgres-dev
+    environment:
+      POSTGRES_USER: weecommerce
+      POSTGRES_PASSWORD: dev
+      POSTGRES_DB: weecommerce
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-dev-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U weecommerce"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: weecommerce-redis-dev
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-dev-data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 3
+
+volumes:
+  postgres-dev-data:
+  redis-dev-data:
