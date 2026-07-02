@@ -47,3 +47,4 @@ WeeCommerce/
 
 Untuk navigasi lengkap mengenai seluruh dokumen teknis, silakan merujuk pada [docs/README.md](file:///C:/Users/SMK%20IT%20IQRO/Documents/WeeCommerce/docs/README.md).
 # WeeCommerce-Fullstack
+# WeeCommerce-Fullstack
